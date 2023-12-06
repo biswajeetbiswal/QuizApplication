@@ -55,7 +55,7 @@ const Quiz = ({ item, name, category }) => {
   };
   return (
     <>
-      <div className="flex justify-center items-center h-screen  bg-[#343964] px-4  relative ">
+      <div className="flex justify-center items-center h-screen  bg-[#343964] px-4 py-2 relative ">
         <div
           className={
             showPopup
@@ -91,7 +91,7 @@ const Quiz = ({ item, name, category }) => {
             {option.map((ele, index) => {
               return (
                 <button
-                  className={`text-[#E2E4F3] font-bold bg-gray-500 py-3 rounded-xl hover:bg-[#fff] hover:text-gray-700 active:bg-[gray] cursor-pointer active:text-white border-2 hover:border-gray-700 ${
+                  className={`text-[#E2E4F3] font-bold bg-gray-500 py-3 rounded-xl sm:hover:bg-[#fff] sm:hover:text-gray-700 sm:active:bg-[gray] cursor-pointer sm:active:text-white sm:border-2 sm:hover:border-gray-700 ${
                     selected && handleSelect(ele)
                   }`}
                   key={index}
